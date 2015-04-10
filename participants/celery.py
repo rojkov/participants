@@ -4,7 +4,7 @@ from celery import Celery
 
 app = Celery('bureaucrat',
              broker='amqp://localhost',
-             include=['bureaucrat.tasks.webhooks'])
+             include=['participants.tasks.webhooks'])
 
 app.conf.update(
     CELERY_IGNORE_RESULT=True,

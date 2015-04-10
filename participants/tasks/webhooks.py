@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from bureaucrat.celery import app
+from participants.celery import app
 
 @app.task
 def participant1(workitem):
